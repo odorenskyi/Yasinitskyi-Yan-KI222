@@ -10,7 +10,7 @@ bool test_1(float value, int bonusBalance, float discountedSum) {
 	if (bonus.bonusBalance == bonusBalance && bonus.discountedSum == discountedSum)
 		return true;
 	else
-		cout << endl << "Î÷³êóâàíèé ðåçóëüòàò: Ê³ëüê³ñòü áîíóñ³â: " << bonusBalance << ", ñóìà äî ñïëàòè ç óðàõóâàííÿì çíèæêè: " << discountedSum << endl << "Îòðèìàíèé ðåçóëüòàò: Ê³ëüê³ñòü áîíóñ³â: " << bonus.bonusBalance << ", ñóìà äî ñïëàòè ç óðàõóâàííÿì çíèæêè: " << bonus.discountedSum << endl;
+		cout << endl << "ÐžÑ‡Ñ–ÐºÑƒÐ²Ð°Ð½Ð¸Ð¹ Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚: ÐšÑ–Ð»ÑŒÐºÑ–ÑÑ‚ÑŒ Ð±Ð¾Ð½ÑƒÑÑ–Ð²: " << bonusBalance << ", ÑÑƒÐ¼Ð° ÑÐ¿Ð»Ð°Ñ‚Ð¸ Ð· ÑƒÑ€Ð°Ñ…ÑƒÐ²Ð°Ð½Ð½ÑÐ¼ Ð·Ð½Ð¸Ð¶ÐºÐ¸: " << discountedSum << endl << "ÐžÑ‚Ñ€Ð¸Ð¼Ð°Ð½Ð¸Ð¹ Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚: ÐšÑ–Ð»ÑŒÐºÑ–ÑÑ‚ÑŒ Ð±Ð¾Ð½ÑƒÑÑ–Ð²: " << bonus.bonusBalance << ", ÑÑƒÐ¼Ð° Ð´Ð¾ ÑÐ¿Ð»Ð°Ñ‚Ð¸ Ð· ÑƒÑ€Ð°Ñ…ÑƒÐ²Ð°Ð½Ð½ÑÐ¼ Ð·Ð½Ð¸Ð¶ÐºÐ¸: " << bonus.discountedSum << endl;
 	return false;
 }
 
@@ -19,7 +19,7 @@ bool test_2(float farenheit, float celsius) {
 	if (result == celsius)
 		return true;
 	else
-		cout << endl << "Î÷³êóâàíèé ðåçóëüòàò: " << celsius << endl << "Îòðèìàíèé ðåçóëüòàò: " << result << endl;
+		cout << endl << "ÐžÑ‡Ñ–ÐºÑƒÐ²Ð°Ð½Ð¸Ð¹ Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚: " << celsius << endl << "ÐžÑ‚Ñ€Ð¸Ð¼Ð°Ð½Ð¸Ð¹ Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚: " << result << endl;
     return false;
 }
 
@@ -28,7 +28,7 @@ bool test_3(int n, int count) {
 	if (result == count)
 		return true;
 	else {
-		cout << endl << "Î÷³êóâàíèé ðåçóëüòàò: " << count << endl << "Îòðèìàíèé ðåçóëüòàò: " << result << endl;
+		cout << endl << "ÐžÑ‡Ñ–ÐºÑƒÐ²Ð°Ð½Ð¸Ð¹ Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚: " << count << endl << "ÐžÑ‚Ñ€Ð¸Ð¼Ð°Ð½Ð¸Ð¹ Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚: " << result << endl;
 		return false;
 	}
 }
@@ -52,17 +52,17 @@ int main() {
 		switch (i) {
 			case 0:
 				for (int j = 0; j < 5; j++) {
-					cout << "Test " << i + 1 << "." << j + 1 << " (ñóìà ïîêóïêè: " << value[j] << ", ê³ëüê³ñòü áîíóñ³â: " << bonusBalance[j] << ", ñóìà äî ñïëàòè ç óðàõóâàííÿì çíèæêè: " << discountedSum[j] << ") " << (test_1(value[j], bonusBalance[j], discountedSum[j]) ? "passed" : "failed") << endl;
+					cout << "Test " << i + 1 << "." << j + 1 << " (ÑÑƒÐ¼ Ð° Ð¿Ð¾ÐºÑƒÐ¿ÐºÐ¸: " << value[j] << ", ÐºÑ–Ð»ÑŒÐºÑ–ÑÑ‚ÑŒ Ð±Ð¾Ð½ÑƒÑÑ–Ð²: " << bonusBalance[j] << ", ÑÑƒÐ¼Ð°  ÑÐ¿Ð»Ð°Ñ‚Ð¸ Ð· ÑƒÑ€Ð°Ñ…ÑƒÐ²Ð°Ð½Ð½ÑÐ¼ Ð·Ð½Ð¸Ð¶ÐºÐ¸: " << discountedSum[j] << ") " << (test_1(value[j], bonusBalance[j], discountedSum[j]) ? "passed" : "failed") << endl;
 				}
 				break;
 			case 1:
 				for (int j = 0; j < 5; j++) {
-					cout << "Test " << i + 1 << "." << j + 1 << " (çà øêàëîþ Ôàðåíãåéòà: " << farenheit[j] << ", çà øêàëîþ Öåëüñ³ÿ: " << celsius[j] << ") " << (test_2(farenheit[j], celsius[j]) ? "passed" : "failed") << endl;
+					cout << "Test " << i + 1 << "." << j + 1 << " (Ð·Ð° ÑˆÐºÐ°Ð»Ð¾ÑŽ Ð¤Ð°Ñ€ÐµÐ½Ð³ÐµÐ¹Ñ‚Ð°: " << farenheit[j] << ", Ð·Ð° ÑˆÐºÐ°Ð»Ð¾ÑŽ Ð¦ÐµÐ»ÑŒÑÑ–Ñ: " << celsius[j] << ") " << (test_2(farenheit[j], celsius[j]) ? "passed" : "failed") << endl;
 				}
 				break;
 			case 2:
 				for (int j = 0; j < 5; j++) {
-					cout << "Test " << i + 1 << "." << j + 1 << " (n = " << n[j] << ", ðåçóëüòàò = " << result_3[j] << ") " << (test_3(n[j], result_3[j]) ? "passed" : "failed") << endl;
+					cout << "Test " << i + 1 << "." << j + 1 << " (n = " << n[j] << ", Ñ€ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ = " << result_3[j] << ") " << (test_3(n[j], result_3[j]) ? "passed" : "failed") << endl;
 				}
 				break;
 		}

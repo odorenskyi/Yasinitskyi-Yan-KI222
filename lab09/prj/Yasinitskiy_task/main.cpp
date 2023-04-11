@@ -10,56 +10,56 @@ int main() {
 	while (true) {
 		char data;
 		char exit;
-		cout << "Ââåä³òü j, z, x àáî c: ";
+		cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ j, z, x Ð°Ð±Ð¾ c: ";
 		cin >> data;
 
 		switch (data) {
 			case 'j':
 				int x, y, z;
-				cout << "Ââåä³òü x: ";
+				cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ x: ";
 				cin >> x;
-				cout << "Ââåä³òü y: ";
+				cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ y: ";
 				cin >> y;
-				cout << "Ââåä³òü z: ";
+				cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ z: ";
 				cin >> z;
 				cout << "s = " << s_calculation(x, y, z) << endl;
 				break;
 			case 'z':
 				float value;
 				Bonus bonus;
-				cout << "Ââåä³òü ñóìó ïîêóïêè: ";
+				cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ ÑÑƒÐ¼Ñƒ Ð¿Ð¾ÐºÑƒÐ¿ÐºÐ¸: ";
 				cin >> value;
 				bonus = getBonus(value);
-				cout << "Ê³ëüê³ñòü áîíóñ³â: " << bonus.bonusBalance << ", ñóìà äî ñïëàòè ç óðàõóâàííÿì çíèæêè: " << bonus.discountedSum << endl;
+				cout << "ÐšÑ–Ð»ÑŒÐºÑ–ÑÑ‚ÑŒ Ð±Ð¾Ð½ÑƒÑÑ–Ð²: " << bonus.bonusBalance << ", ÑÑƒÐ¼Ð°  ÑÐ¿Ð»Ð°Ñ‚Ð¸ Ð· ÑƒÑ€Ð°Ñ…ÑƒÐ²Ð°Ð½Ð½ÑÐ¼ Ð·Ð½Ð¸Ð¶ÐºÐ¸: " << bonus.discountedSum << endl;
 				break;
 			case 'x': {
 				float farenheit;
 				float celsius;
 
-				cout << "Ââåä³òü ê³ëüê³ñòü ãðàäóñ³â çà øêàëîþ Ôàðåíãåéòà: ";
+				cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ ÐºÑ–Ð»ÑŒÐºÑ–ÑÑ‚ÑŒ  Ð³Ñ€Ð°Ð´ÑƒÑÑ–Ð² Ð·Ð° ÑˆÐºÐ°Ð»Ð¾ÑŽ Ð¤Ð°Ñ€ÐµÐ½Ð³ÐµÐ¹Ñ‚Ð°: ";
 				cin >> farenheit;
 
 				celsius = getCelsius(farenheit);
 
-				cout << "Ê³ëüê³ñòü ãðàäóñ³â çà øêàëîþ Öåëüñ³ÿ: " << celsius << endl;
+				cout << "ÐšÑ–Ð»ÑŒÐºÑ–ÑÑ‚ÑŒ Ð³Ñ€Ð°Ð´ÑƒÑÑ–Ð² Ð·Ð° ÑˆÐºÐ°Ð»Ð¾ÑŽ Ñ†ÐµÐ»ÑŒÑÑ–Ñ: " << celsius << endl;
 				break;
 			}
 			case 'c':
 				int n;
 				int result;
-				cout << "Ââåä³òü N: ";
+				cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ N: ";
 				cin >> n;
 				result = t9_3(n);
 				if (result == -1)
-					cout << "Ââåäåíî íåïðàâèëüí³ äàí³." << endl;
+					cout << "Ð’Ð²ÐµÐ´ÐµÐ½Ð¾ Ð½ÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ñ– Ð´Ð°Ð½Ñ–." << endl;
 				else
-					cout << "Ðåçóëüòàò: " << result << endl;
+					cout << "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚: " << result << endl;
 				break;
 			default:
-				cout << "\aÂâåäåíî íåïðàâèëüí³ äàí³." << endl;
+				cout << "\aÐ’Ð²ÐµÐ´ÐµÐ½Ð¾ Ð½ÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ñ– Ð´Ð°Ð½Ñ–." << endl;
 		}
 
-		cout << "Ââåä³òü v, V àáî A äëÿ âèõîäó ³ç ïðîãðàìè: ";
+		cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ v, V Ð°Ð±Ð¾ A Ð´Ð»Ñ Ð²Ð¸Ñ…Ð¾Ð´Ñƒ Ñ–Ð· Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¸: ";
 		cin >> exit;
 
 		if (tolower(exit) == 'v' || exit == 'A')
